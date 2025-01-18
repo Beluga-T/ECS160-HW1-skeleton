@@ -12,6 +12,7 @@ redis-cli flushall
 
 echo ">>>>>>>>>>> CHECKING THE APP COMPILES"
 
+
 mvn clean install
 
 if [ $? -eq 0 ]; then
