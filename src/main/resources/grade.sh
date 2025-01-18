@@ -12,7 +12,6 @@ redis-cli flushall
 
 echo ">>>>>>>>>>> CHECKING THE APP COMPILES"
 
-
 mvn clean install
 
 if [ $? -eq 0 ]; then
@@ -97,4 +96,3 @@ if [[ $num_db_records > 2000 ]]; then
 else
 	echo "Something went wrong in record insertion. Must check manually."
 fi
-
